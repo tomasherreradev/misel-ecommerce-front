@@ -12,7 +12,7 @@ export default function Banner() {
         <p className="text-black text-xl font-normal">
           Pescados y Pollos seleccionados
         </p>
-        <button className="bg-white text-orange-500 border font-semibold px-4 py-2 rounded-md mt-4 hover:bg-orange-100">
+        <button className="bg-white text-orange-500 border font-semibold px-4 py-2 rounded-md mt-4 hover:bg-orange-500 hover:text-white transition-all">
           Comprar
         </button>
       </div>

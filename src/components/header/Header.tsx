@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ showBanner = true, showServices = true }) => {
   return (
-    <header className="flex flex-col bg-orange-400 text-white relative">
+    <header className="flex flex-col bg-orange-400 text-white relative shadow-md">
       <NavBar />
       {showBanner && <Banner />}
       {showServices && <Services />}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Product } from '../../types/index';
 import imageExample from './../../assets/images/mila-pollo.jpg'
@@ -21,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <p className="text-lg font-semibold">Precio: ${product.price}</p>
             <p className="text-gray-500">Stock: {product.stock}</p>
             <button className="mt-4 bg-orange-500 text-white rounded-md px-4 py-2 hover:bg-orange-600">
-                Add to Cart
+                Añadir al carrito
             </button>
         </div>
     );

@@ -11,6 +11,9 @@ import ConfirmAccount from './pages/ConfirmAccount';
 
 import ProtectedRoute from './hooks/useProtectedRoutes';
 import Dashboard from './pages/Admin/Dashboard';
+import Products from './pages/Admin/Products';
+import AddProducts from './pages/Admin/ProductsPages/AddProducts';
+import EditProduct from './pages/Admin/ProductsPages/EditProducts';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
 
           {/* admin routes */}
           <Route path="/admin" element={<ProtectedRoute><LayoutSimple><Dashboard /></LayoutSimple></ProtectedRoute>} />
+          <Route path="/admin/products" element={<ProtectedRoute><LayoutSimple><Products /></LayoutSimple></ProtectedRoute>} />
+          <Route path="/admin/products/add" element={<ProtectedRoute><LayoutSimple><AddProducts /></LayoutSimple></ProtectedRoute>} />
+          <Route path="/admin/products/edit/:id" element={<ProtectedRoute><LayoutSimple><EditProduct /></LayoutSimple></ProtectedRoute>} />
 
         </Routes>
       </Router>
